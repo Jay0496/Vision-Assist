@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E4057;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#chatbox {
+    background-color: #ffffff;
+    width: 375px; /* Chatbox width similar to phone screen */
+    height: 500px;
+    padding: 0; /* Remove extra padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keep the input at the bottom */
+    position: relative;
+}
+
+/* Scrollable messages */
+#messageArea {
+    overflow-y: auto;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Modern scrollbar styling without arrows */
+#messageArea::-webkit-scrollbar {
+    width: 8px;
+}
+
+#messageArea::-webkit-scrollbar-thumb {
+    background-color: #707665; /* Green secondary color */
+    border-radius: 10px;
+}
+
+#messageArea::-webkit-scrollbar-track {
+    background-color: #E0E0E0;
+}
+
+.botText, .userText {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.botText {
+    background-color: #99C24D; /* Updated bot message color */
+    color: #ffffff;
+    text-align: left;
+}
+
+.userText {
+    background-color: #2E4057; /* User message color */
+    color: #ffffff;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Input section fixed at the bottom */
+#userInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#textInput {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#buttonInput {
+    padding: 10px 20px;
+    background-color: #99C24D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#buttonInput:hover {
+    background-color: #75A13E;
+}
