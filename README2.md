@@ -28,6 +28,7 @@ pip install opencv-python mediapipe numpy ultralytics pyttsx3
 
 # How It Works
 1. Hand Tracking:
+
 The webcam feed is processed using MediaPipe to extract hand landmarks. The positions of the wrist and index fingertip are used to compute a pointing vector.
 
 2. Dynamic ROI Calculation:
