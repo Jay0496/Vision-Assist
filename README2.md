@@ -18,7 +18,7 @@ This project demonstrates an interactive system that uses hand tracking to detec
 
 ## Dependencies
 
-- Python 3.6+
+- Python 3.6 - 3.11
 - [OpenCV](https://opencv.org/)
 - [MediaPipe](https://mediapipe.dev/)
 - [NumPy](https://numpy.org/)
